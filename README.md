@@ -1,36 +1,37 @@
-# covid-keyword-analysis
-NLP pipeline for analyzing keyword evolution in COVID-related Twitter discourse.
+# COVID Keyword Evolution Analysis 
 
-This repository contains selected Python scripts from a multi-step Natural Language Processing (NLP) pipeline used to analyze the evolution of public discourse during the COVID-19 pandemic. The project focuses on extracting, normalizing, comparing, and visualizing high-frequency keywords from Twitter data.
+This repository contains selected Python scripts from a multi-stage Natural Language Processing (NLP) pipeline developed to analyze the evolution of public discourse during the COVID-19 pandemic on Twitter. The project focuses on extracting, normalizing, comparing, and visualizing high-frequency keywords across time using both traditional (word counts) and algorithmic (RAKE, YAKE) methods.
 
 ## Included Scripts
 
-All scripts are located in the `covid-keyword-analysis/` directory:
+All scripts are presented in the top-level directory:
 
-- `step1_merge_keywords.py`: Lemmatizes keywords and maps them to unified concepts using a custom synonym dictionary.
-  
-- `step2_filter_keywords.py`: Filters meaningless terms and calculates keyword lifespan (e.g., `span_months`, `max_consecutive_months`).
+- `step1_merge_keywords.py`: Lemmatizes keywords and maps them to unified concepts via a custom synonym dictionary.
 
-- `step3_heatmap_4views.py`： Keyword Heat Map (4 Perspectives： NormalWordCounts, Yake, Rake, AllCombined)
+- `step2_filter_keywords.py`: Filters meaningless terms and calculates keyword lifespan metrics (e.g., `span_months`, `max_consecutive_months`).
 
-- `step3.2_plot_keyword_trend.py`: Visualizes keyword trends over time using Z-score normalization.
-  
-- `step3.3_RAKE_YAKE.py`: Compares RAKE and YAKE extracted keyword sets using Jaccard and RBO similarity, and generates cleaned WordClouds.
+- `step3_heatmap_4views.py`: Generates a heatmap of keyword intensities across four perspectives (Normal Word Count, YAKE, RAKE, Combined).
 
-- `step3.4_count_distribution.py`：Statistically analyze the frequency distribution of evergreen words vs. explosive words
+- `step3.2_plot_keyword_trend.py`: Visualizes monthly trends of selected keywords using Z-score normalization.
 
-- `scatter_draw.py`: Generates a customized scatter plot of keyword lifespan with smart fan-out label positioning to avoid overlapping.
+- `step3.3_RAKE_YAKE.py`: Compares RAKE and YAKE keyword sets using Jaccard and RBO similarity metrics; generates normalized word clouds.
 
-## Note on Data and Output
+- `step3.4_count_distribution.py`: Analyzes frequency distribution of evergreen vs. bursty keywords.
 
-Due to data privacy concerns, raw tweet data, intermediate `.csv` files, and final plots are not included in this repository. Only core code logic is provided.
-The project has been accepted byCSCI 2025 and is currently revising the manuscript in preparation for publication in SpringerNature.
+- `scatter_draw.py`: Creates a customized scatter plot of keyword lifespan with intelligent fan-out label positioning for overlapping points.
 
-## Programming Supplement
+## 🚫 Data and Output Disclaimer
 
-This repository supports a graduate school application as a demonstration of programming, NLP, and data visualization skills. For questions or access to the full pipeline, please contact the author directly.
+Due to privacy and data usage policies, raw tweet data, intermediate `.csv` files, and generated figures are not included in this repository. This repository only provides clean, modular Python code for keyword extraction, normalization, analysis, and visualization.
+
+> This work was accepted by **CSCI 2025** and is currently under manuscript revision for publication with **Springer Nature**.
+
+## Programming Supplement Purpose
+
+This repository is submitted as part of a graduate application to demonstrate proficiency in programming, text mining, and data visualization using Python. For access to the full pipeline or project details, please contact the author.
 
 ---
 
 Dan Li  
-contact email: dannli@myyahoo.com
+📧 Email: dannli@myyahoo.com  
+🔗 GitHub: [https://github.com/YOUR_USERNAME/covid-keyword-analysis](https://github.com/YOUR_USERNAME/covid-keyword-analysis)
