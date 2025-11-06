@@ -2,6 +2,10 @@
 
 This repository contains selected Python scripts from a multi-stage Natural Language Processing (NLP) pipeline developed to analyze the evolution of public discourse during the COVID-19 pandemic on Twitter. The project focuses on extracting, normalizing, comparing, and visualizing high-frequency keywords across time using both traditional (word counts) and algorithmic (RAKE, YAKE) methods.
 
+##Project Flowchart
+
+![Flowchart](flowchart.png)
+
 ## Included Scripts
 
 All scripts are presented in the top-level directory:
