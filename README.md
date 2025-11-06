@@ -5,7 +5,7 @@ This repository contains selected Python scripts from a multi-step Natural Langu
 
 ## Included Scripts
 
-All scripts are located in the `code/` directory:
+All scripts are located in the `covid-keyword-analysis/` directory:
 
 - `step1_merge_keywords.py`: Lemmatizes keywords and maps them to unified concepts using a custom synonym dictionary.
   
@@ -16,6 +16,9 @@ All scripts are located in the `code/` directory:
 - `step3.2_plot_keyword_trend.py`: Visualizes keyword trends over time using Z-score normalization.
   
 - `step3.3_RAKE_YAKE.py`: Compares RAKE and YAKE extracted keyword sets using Jaccard and RBO similarity, and generates cleaned WordClouds.
+
+- `step3.4_count_distribution.py`：Statistically analyze the frequency distribution of evergreen words vs. explosive words
+
 - `scatter_draw.py`: Generates a customized scatter plot of keyword lifespan with smart fan-out label positioning to avoid overlapping.
 
 ## Note on Data and Output
