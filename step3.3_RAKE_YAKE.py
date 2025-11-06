@@ -15,14 +15,14 @@ yake_df = pd.read_csv("yake/output_yake/global_top_yake.csv")
 rake_keywords = rake_df['keyword'].str.lower().tolist()
 yake_keywords = yake_df['keyword'].str.lower().tolist()
 
-# ✅ Jaccard 相似度（集合方式，不考虑排名）
+# Jaccard 相似度（集合方式，不考虑排名）
 set_rake = set(rake_keywords)
 set_yake = set(yake_keywords)
 jaccard = len(set_rake & set_yake) / len(set_rake | set_yake)
 
 print("Jaccard 相似度：", round(jaccard, 3))
 
-# ✅ RBO 相似度（考虑排名，默认 p=0.9）
+#  RBO 相似度（考虑排名，默认 p=0.9）
 rbo_score = rbo.RankingSimilarity(rake_keywords, yake_keywords).rbo()
 print("RBO 相似度：", round(rbo_score, 3))
 
