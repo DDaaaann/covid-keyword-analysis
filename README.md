@@ -34,4 +34,4 @@ This repository is submitted as part of a graduate application to demonstrate pr
 
 Dan Li  
 📧 Email: dannli@myyahoo.com  
-🔗 GitHub: [https://github.com/YOUR_USERNAME/covid-keyword-analysis](https://github.com/YOUR_USERNAME/covid-keyword-analysis)
+🔗 GitHub: [https://github.com/DDaaaann/covid-keyword-analysis](https://github.com/DDaaaann/covid-keyword-analysis)
