@@ -4,12 +4,6 @@ from pathlib import Path
 import spacy
 import re
 
-#2025—10-21会议内容
-# ！！！！！检查生成的文件有多个重复单词✅
-# ！！！！试试每个方法第一个月词组（2/3 words）top10
-#!!!!!后期，加词组，每个图可以按每个topic
-# !!!!! each 3 month tws ID 
-
 #加载 spaCy 英文模型（只需首次运行时下载）
 nlp = spacy.load("en_core_web_sm")
 
